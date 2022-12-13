@@ -12,8 +12,6 @@ jobs:
         tree > file_tree.txt
     - name: Update README
       run: |
-        echo "# Repository file tree" >> README.md
-        echo "" >> README.md
         cat file_tree.txt >> README.md
     - name: Commit changes
       run: |
