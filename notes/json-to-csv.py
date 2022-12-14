@@ -1,10 +1,7 @@
 import json
-import pathlib
 
 file = open("notes.json")
 data = json.load(file)
-
-# --------
 
 for session in data:
     for lesson in data[session]:
