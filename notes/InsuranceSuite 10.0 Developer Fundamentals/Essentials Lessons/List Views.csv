@@ -1,0 +1,12 @@
+Keyword;Description
+List View Panel;Container widget enabling the user to view and edit the list of items in the database.
+List View Panel structure;Takes single root object with array of entities. Row Iterator processes array and produces row for each entity instance. Row contains one or more cell widgets. Cell displays individual entity field.
+Row Iterator;Iterator is a widget that takes item set and performs the same actions for each member. Row Iterator takes object set (array or query results) and renders rows.
+Row Iterator required properties;value, valueType, elementName, and editable.
+value;The set of elements to process.
+valueType;The type of the set of elements.
+elementName;Points to object in array associated with row. Indicates the most recently processed object.
+editable;Boolean value indicating whether row is editable.
+List View PCF;Reusable. Takes root object. Created as eparate PCF file and filename ending with LV.
+List View Widget; Not reusable. Inherits parent root object. Created as widget in parent container's PCF.
+Toolbar;Horizontal bar containing buttons and widget. Can be added to screen, panel ref, or list view input. Every List View Panle must have associated toolbar. Automatically provides pagination when needed.

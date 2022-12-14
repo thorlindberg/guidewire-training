@@ -1,0 +1,21 @@
+Keyword;Description
+Organization;Business entity representing insurer or agency.
+Producer;Comissioned intermediary assiting insurer with policy underwriting for insureds. Identified by unique producer code.
+Internal producer;Employee of the insurer. Sells insurance.
+External producer;Belongs to external organization. May be referred to as independent agent.
+Producer types;Producer of record or service.
+Producer of record;Created submission and receives comission based on premium.
+Producer of service;Services policy. If not also producer of record, then comission is received only after policy renewal.
+Producer code;Unqieu ID assigned by insurer to track agent/agency responsibly for policy/account. Can track multiple policy categories per producer.
+Organization management;Administration tab provides organization search, viewing, editing, and creation.
+Producer code management;Superusers or useradmins can manage producer codes, users, groups and organizations. Producer codes can be searched, viewed, edited, and created.
+Delegate management;Internal organization delegates management through useradmins to external company, which can also be accessed and managed by internal organization.
+Security;Role-based or data-based security.
+Role-based security;Permissions regulate abiltiy to view or perform granular task. Roles are collections of permission and typically map to job function or title.
+Data-based security;Defines data access and typically managed through producer codes.
+Prducer code security;Producer code controls daata acesss and determines available actions in collaboration with permissions.
+Status field;Available for organizations and producer codes. Limits access after contract expiration and prevents misuse.
+External user access;Configurable parameter External User Access in config.xml. Three access levels: FULLYRESTRICTED, PROTECTINTERNAL, and ALLOWINTERNAL.
+FULLYRESTRICTED;Default. External users can only be assigned to their organization groups and producer codes.
+PROTECTINTERNAL;External users can be assigned to any external group and producer codes.
+ALLOWINTERNAL;External users can be assigned to any internal or external group and producer codes.

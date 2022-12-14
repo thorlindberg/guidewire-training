@@ -1,0 +1,5 @@
+Keyword;Description
+Entity name;User interface friendly name for instance of given entity. Contains at least one default entity name type definition. Default definition acessible with entity DisplayName property.
+Entity name usage;Displaying entity instance and explicitly referencing DisplayName property of entity instance.
+Undefined entity name;Using DispalyName property for entity without enttity name type definition results in list of fields.
+Complex entity name type;Perform operations: conditional logic, string manipulation, and calculations.

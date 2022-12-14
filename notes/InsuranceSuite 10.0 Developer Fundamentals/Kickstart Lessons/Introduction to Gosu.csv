@@ -1,0 +1,18 @@
+Keyword;Description
+Guidewire Gosu;Compatible with Java. Both procedural and object-oriented. Fundamental application behavior, complex business processes, hierarchical Gosu Rules, and dynamic UI.
+Gosu rule;Conditional actions, such as navigation. Tests conditions and performs actions. Examples: Event Fired rules, Pre-update rules, and Validation rules.
+Entity enhancement;Extend entity functionality through entity methods.
+Entity name;Defines displayed name of entity instance.
+Gosu class;Encapsulates adata and codes for specific purpose or function.
+Workflow;Asynchronous execution of business processes, with optional multiple state transition over time.
+Gosu Scratchpad;Embedded code editor for writing, executing and debugging Gosu code snippets.
+Arrays;Used to associate a main entity with a set of entities of same type.
+Array methods;Gosu block expression. Used to get information about array or conditional information about its members.
+array.hasMatch(/ n -> condition);Determine if element in array matches condition.
+array.countWhere(/ n -> condition);Count number of elements in array that match condition.
+array.firstWhere(/ n -> condition);Retrieve first element matching condition.
+array.where(/ n -> condition);Retrieves target array consiting of elements matching condition.
+Block expression;Logic passed to a method as argument. Consists of block identifier (/), an element name (n), arrow (->), and a condition.
+Rational number libraries;gw.util.Rational provides an infinite scale of rational numbers. gw.util.money and gw.util.science store rational numbers.
+Arithmetic operators;Rational.add(i), Rational.subtract(i), Rational.multiply(i), and Rational.divide(i).
+Rational class;Gosu provides a Rational.class for rational numbers.

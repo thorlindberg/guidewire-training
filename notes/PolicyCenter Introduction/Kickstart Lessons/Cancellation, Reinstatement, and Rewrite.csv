@@ -1,0 +1,7 @@
+Keyword;Description
+Cancellation transaction;Policy must be cancelled to reinstate or rewrite.
+Cancellation;Ends a policy before its expiration date. Varies by insurer and is configurable. Insureds can choose cancellation without reason, but insurers must demonstrate cause such as non-payment or fraud.
+Reinstatement;Reinstates canceleld policy with original terms. Cancellation and reinstatement have same effective date. No lapse in coverage. Configurable.
+Rewrite;A significant change to policy that can not be captured with policy change. Partial or full discard of original policy terms. Full-term rewrite or mid-term rewrite.
+Full-term rewrite;Rewrites entire policy term, including beginning of term. Discards original policy term.
+Mid-term rewrite;Rewrites remainder of policy term, excluding beginning of term.

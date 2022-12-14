@@ -1,0 +1,11 @@
+Keyword;Description
+User;Individual interacting with PolicyCenter. They can perform policy transaction, look up policy status, manage activities, or assign rules, notes, attached documents, hitory, and team views. Users can belong to multiple groups.
+User types;Internal user, external user, and captive agent. Roles and producer codes dictate access.
+Internal user;Employee of insurer. Can potentially view external user groups and permissions.
+External user;Person outside company with access to PolicyCenter. Typically a proucer.
+Captive agent;Internal employee of insurer or external contracted workers for insurer.
+Group;Collection of users, producer codes, queues, and regions. Created by administrator based on geography, divisions, and departments. Groups can contain sub-groups with users and producer codes. Multiple groups per user.
+User management;Administration tab provides user search, viewing, editing, and creation. User details include ownership (user type) and access (roles, underwriting authority, and region).
+User access;Users inherit group producer codes, but additional codes can be added per user.
+Group management;Administration tab provides group search, viewing, editing, and creation.
+Team management;Team tab provides supervisors and managers the tools to manage groups. It reports all activities and jobs grouped by time and status. Provides mass reassignment of activities and jobs. Displays policy transactions by role or activity.

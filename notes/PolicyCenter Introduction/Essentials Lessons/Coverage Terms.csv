@@ -1,0 +1,9 @@
+Keyword;Description
+Coverage term;Value measuring or further defining specific coverage. Coverage can have zero or many terms attached to it. Examples: deductible and limit. They are stored in coverage table.
+Coverage term attributes;Includes term type and model type.
+Coverage term columns;Coverage table has set number of columns for each term type. Number of coverage terms is limited to number of columns for type.
+Generic schedule;List of detailed information about insured's coverables. Uses the generic schedule data model. Created/edited using Product Designer. Declaratively defined as XML in product model. Example: personal property in homeowner's policy.
+Schedule types;Schedule or schedule with coverage terms.
+Schedule;Captures information per scheduled item. Not directly used for rating. Usually included in forms.
+Schedule with coverage terms;Captures information per scheduled item. Includes one or more coverages affecting rating. Includes one or more coverage terms.
+Add generic schedule to LOB;Create generic schedule data model for line -> Configure scheduled clauses and properties in product model -> Optionally configure schedule user interface.

@@ -1,0 +1,7 @@
+Keyword;Description
+Subtype entity;Entity that is child of supertype entity and inherits fields and method from supertype.
+Subtypes in database;Typelist and entity table define supertype and subtype relationship. Supertype entity table contains subtype columns in denormalized form. Irrelevant columns for subtypes contain null.
+Subtypes in data dictionary;Shown under parent entity listing.
+Subtypes and java classes;Class methods, fields and properties can be extended to inherit from parent class. Uses extends keyword after class name declaration.
+Subtype limitations;New subtypes inherit from supertype. Unable to inherit from multiple supertypes.
+Subtype entity extensions;Base application comes with oOTB subtype entities. Can be extended the same way as top-level entities. Entity extensions are stored in ../configuration/config/extensions/Entity. Uses _Ext suffix for new fields in extension.

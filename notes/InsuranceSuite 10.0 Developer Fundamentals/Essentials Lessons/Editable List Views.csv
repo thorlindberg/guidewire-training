@@ -1,0 +1,5 @@
+Keyword;Description
+Iterator Buttons widget;Contains two buttons: add and remove. Provides functionality: adds new rows and removes existing rows. Visbility and availability logic is automatically inherited.
+Toolbar;Best position for edit button is screen level toolbar. Best position for iterator buttons is toolbar closest to List View.
+Row Iterator buttons;Configuration of row iterator properties govern iterator buttons functionality.
+Editable hierarchy;Cells become editable when row iterator is set to editable. List View panel and Row inherit editable from parent. List View panels can include editable and non-editable cells.

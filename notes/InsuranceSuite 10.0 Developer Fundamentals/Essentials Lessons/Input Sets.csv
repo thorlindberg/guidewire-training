@@ -1,0 +1,4 @@
+Keyword;Description
+Input set;Set of grouped atomic widgets. Reusable. Common visibility/editability. Fit attributes of primary containers, but msut be embedded into detail View Panels, can't be referenced, and can't have toolbar associated.
+Input set widget;Not reusable. Inherits parent root object. Created as widget in parent container's PCF.
+Input set PCF;Reusable. Takes a root object. Created as separate PCF and filename ends with InputSet.

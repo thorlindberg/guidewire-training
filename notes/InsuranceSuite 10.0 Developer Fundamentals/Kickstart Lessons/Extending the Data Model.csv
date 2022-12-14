@@ -1,0 +1,10 @@
+Keyword;Description
+Entity;Describes business object used in application. Defined with XML file and extension .ETI. Two main types: base application and custom.
+Base application entity;Created by Guidewire and shipped with standard configuration. Either platform or application level. Platform entities are common to all application. Application entities are specific to application.
+Custom entity;Created by users. Application level. Local inside application.
+Entity extension;Extends or overrides attributes of read-only base application entities. Defined with XML file and extension .ETX. Maximum one extension file per entity. Added fields should be named with suffix _Ext.
+Internal Entity Extension;Created by Guidewire to add application level extensions to platform level entities. Defined with XML file and extension .EIX. Local and read-only inside application.
+Extensions;Adds fields to existing classes. Does not create a new subclass of a parent superclass, unlike some OOP languages.
+Typelist;Fixed and predfined list of values (typecodes). Defines constraints of user interface.
+Typelist extension;Adds new typecodes to base application typelist. Defined with XML file and extension .TTX. Maximum one extension file per typelist. Added typecodes should be named with suffix _Ext.
+Typelists in data model;Similar to entity. Platform and base application typelists in ../metadata/typelist. Extensions in ../extension/typelist. Virtual typelists not available as .TTI files.

@@ -1,0 +1,5 @@
+Keyword;Description
+Rate modifier;Value used by rating engine to justify [portion of] policy premium. Captures information not tied to coverage or coverables but relevant to pricing.
+Modifier pattern;Affects rating of coverages. Creates instance of modifier affecting cost of policy. Product-level modifiers are called ProductModifiers, and are applied to product only for multi-line policies.
+Schedule rate modifier;Type of modifier proviiding credit or debit within established value range. Used for intangiables that cannot be quantified as part of submission.
+Rate factor;Listed in the RateFactorType typelist before added to schedule rate in Product Designer.

@@ -1,0 +1,16 @@
+Keyword;Description
+Job wizard;Location with one or more ordered screens, with one screen active at a time. Has a toolbar for navigating screens, access screens directly, have ordered screens, and navigation availability changes dynamically.
+Base application wizards;Submissions, Renewal, Reinstatement, Policy Change, Audit, Cancelaltion, Rewrite, and Issuance.
+Job wizard architecture;Consists of steps, with each step pointing directly to a screen. Steps are often grouped together into wizard step steps or step groups. Sets enable a single specificaton of logic to apply to multiple steps based on lines of business.
+Job wizard PCF;Information includes entry points, required objects, steps pointing to sccreens, andZproperties pointign to separate files for tab bar, info bar, tool bar, and menu actions.
+Job wizard properties;countsAsWork, canVisit, and canEdit.
+countsAasWork;Allows users to resume the wizard after leaving without saving. Its status will be Unsaved Work in the same session.
+canVisit;Property that determines if user can visit job wizard.
+canEdit;Property that determines if user can edit job wizard.
+Wizard entry point and variables tab;Entry point is defined with EntryPointName(objectName: ObjectType, ...). Variables tab declares objects expected in entry points. Navigate to job wizard through EntryPointName.go(objectsToPass).
+WizardStepGroup;Wizards steps which are indented and have single parent label.
+WizardStepSet;A set of wizard steps with shared logic. Directly insertable into wizard or wizard group.
+WizardStepSetRef;Reference to PCF where step is stored.
+Independent steps;Set the independent attribute of a step to true to make it independent.
+Ordered steps;Order of steps in PCF determines order in application. Dependent steps are in top box. Independent stepss are in bottom box. Child steps are indented.
+Screen PCF;Job wizard steps reference screens through ScreenPropertyOfJobWizardStep = EntryPointOfScreen(objectsToPass). PCF contains reference to embedded content. Screen labels are title and label. Buttons on screen are wizard buttons and toolbar buttons.

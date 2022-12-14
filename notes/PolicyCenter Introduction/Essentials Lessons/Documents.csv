@@ -1,0 +1,9 @@
+Keyword;Description
+Document;Electronic file containing information about account, policy, or job. Not part of contract/policy.
+Document persistence;Documents exist in the systems: user computer, PolicyCenter, production system, or document management system.
+Document creation;Documents are created by uploading to document management system or through a PolicyCenter template which is also uploaded to document management system.
+Document production;Creating a draft document through merging of template with business dataset. Underwriter can review and modify this draft document.
+Document production system;Either internal in PolicyCenter or an external server that receives business data values and returns a draft document.
+Document storage integration;PolicyCenter sends documents for storage, and receives stored documents upon request for viewing and editing. While being edited, a document is stored on the user device.
+Document management architecture;Document management system returns document and a meta-file describing the document (author, security etc.).
+Document mailing;Insurance documents are typically physically mailed to recipients. This is either accomplished by manually printing a document and mailing it, or by flagging a document in the document management system which forwards it to an automated printing/mailing system.

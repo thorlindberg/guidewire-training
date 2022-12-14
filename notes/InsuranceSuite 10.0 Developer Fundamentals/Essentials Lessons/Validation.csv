@@ -1,0 +1,10 @@
+Keyword;Description
+Pattern matching;Field-level validation technique. Verifies input contents. Main components: regular expression and input mask (optional).
+Regular expression;Abstract pattern. Examples: email address and routing number.
+Input mask;Watermark in field and mouseover tooltip.
+Pattern matching in data model;Compliance enforced in UI and API. Full localization support. Robust extensibility. Reusable validation. Business logic can not drive static values.
+Pattern matching in user interface;Business logic can drive dynamic values. Restricts data commit. Implemented as widget properties. Only few widgets support it, configuration per widget, no custom error messages, and extensibility concerns.
+Validation expression;Logical Gosu expression associated with single atomci widget implementing field-level validation. Save is allowed on null return, and prevented on string return (error message). Configured as widget property. Input validated on update.
+Validation rule;Written as Gosu rules and validate (complex) logical conditions and relationships between entity fields. Ensures logical data input, fulfillment of required input, and manages relationships. Input validated on save.
+Delegate;Models capability and allows functionality sharing across data model. Virtual object defined in data model, consisting of database fields and methods reusable by multiple entities. One-to-many relationship between entity and delegates.
+triggersValidation attribute;Boolean attribute that controls whether validation is performed on save.

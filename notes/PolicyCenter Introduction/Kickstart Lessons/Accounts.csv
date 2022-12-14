@@ -1,0 +1,11 @@
+Keyword;Description
+Account;Provides the ability to store customer information separately from policies. Account can have zero or many associated policies. This flexibility is useful for controlling information visibility.
+Account holder;People or companies can have an account.
+Relationship;A single contact can contain multiple accounts. One person can be associated with multiple accounts.
+Account types;Personal and business.
+Policy;One policy can be associated with one account.
+Creating;When account creation is requested, PolicyCenter initiates name clearance.
+Name clearance;Validates that account name does not exist in database or is not already represented by another producer for the given policy.
+Producer;Generic third party that brings business to insurer[s].
+Account supporting information;Summary, contacts, locations, participants, transactions, submission manager, documents, policies and UW files, history, notes, and related account.
+Account Summary Dashboard;Details about account holder, general overview of account, billing details, current activities, list of account policies, policy transactions, claims, related accounts, producers and locations.

@@ -1,0 +1,14 @@
+Keyword;Description
+User interface framework;Page Configuration Format (PCF) is a properietary and graphical environment for creating and editing end-user interfaces.
+Atomic widget;Displays single value nad has single action. Individisble widget.
+Container widget;Collection of atomic widgets and/or other container widgets. Logical organization of data and functionality.
+Primary container widget;Reusable view that organizes atomic widgets. Examples: detail view, list view, input set.
+Detail view panels;CRUD operations on data records. Columns of data.
+List view panels;Tabular representation of multiple data records. Use a small number of atomic widgets.
+Input sets;Collection of grouped atomic widgets. Must be embedded into detail view panel.
+Secondary container widget;Organizes primary containers. Examples: list detail panel, card.
+List detail panel;Contains top list iew and bottom view panel displaying selected data.
+Card;Collection of cards with each card containing detail views or list views.
+Top-level container widget;Organizes primary and secondary containers. Example: screen.
+Screen;Container for atomic widgets and primary/secondary views.
+Location;A PCF element that is a navigation target. System permissions control and limit user read/write access.

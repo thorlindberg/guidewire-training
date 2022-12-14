@@ -1,0 +1,6 @@
+Keyword;Description
+Availability in product model;Based on factors including effective start date, effective end date, industry code, underwriting company, and policy transaction type. Unavailable patterns are not exposed by PolicyCenter.
+Availability configuration;Availability table lookup, availability script, and grandfather states.
+Availability script;Consults availability table to determine available products, then passes available entities through script, which reduces nubmer of availableentities.
+Grandfathering;Product model pattern becomes available if it already exists on policy, and thus can stay beyond its expiration date. It is determined by state, end effective date, and underwriting company.
+Reload availability;Users can dynamically reload criteria for availability, by editing/saving availability data in product designer, copy/syncing xml to external directory, or by copying product model to external directory.

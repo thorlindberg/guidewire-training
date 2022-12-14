@@ -1,0 +1,32 @@
+Keyword;Description
+Primary entities;There are two primary entities in the data model, Policy and Account.
+Major entities;There are 25 major entities in the data model. These can be viewed as five groups.
+Policy group questions;How does each policy period look? What is covered on policy? Who holds policy? What must be done for policy? Who is responsible for policy processing?
+Relationship;Account can have one or more relationships to policy.
+Policy period;Period of time where policy has not changed. A policy starts with a single period equivalent to its term. When it is renewed, a new period begins on the same policy. When it is changed, a new period begins on the same term.
+Policy line;Captures majority of policy contents, such as coverables, coverages, and coverage terms. Product can be monoline or multiline.
+Coverable-specific entity;Every coverable has its own entity and table. Coverables are database names for coverages.
+Line-specific entity;Every policy line has a cost entity for storing costs and transaction entity for storing transactions. Transactions represent line items in a log of pricing changes. They live off the policy period and point to costs that they offset or onset. Onsetting refers to costs in the same period, while offsetting refers to based-on period costs.
+General policy line entity;The six additional entities related to policy contents are PolicyLineAnswer, Modifier, RateFactor, PolicyContact, PolicyLocation, and Form.
+PolicyLineAnswer;Entity storing answer sto questions in location and supllemental question sets.
+Modifier;Entity storing modifiers for policy lines.
+RateFactor;Entity storing rate factors for schedule rate modifiers.
+PolicyContact;Entity storing contacts listed on policy. Linked to AccountContact entity.
+PolicyLocation;Entity storing locations listed on policy. Linked to AccountLocation entity.
+Form;Entity storing forms.
+Policy transaction entity;As policy transactions are managed by jobs, their work is captured by the entities: Job, PeriodAnswer, Workflow, UWIssue, and Activity.
+Job;Entity tracking work needed for each policy transaction.
+PeriodAnswer;Entity storing answers for pre-qualification question set questions.
+Workflow;Entity tracking workflows for policy period creation by job.
+UWIssue;Entity storing policy evaluation issues.
+Activity;Entity storing activities for completing policy transaction.
+User assignment;Mulitple users are typically assigned to a policy, through role assignment in groups. The assignment engine can automatically assign roles using round robin selection. There are two types of ownership: Activity ownership and Role ownership.
+Activity ownership;Object owned by single user holding sole responsibility. Occurs only for activities.
+Role ownership;Object owned by multiple users holding a specific role, which determines their assigned activities.
+Account details;The remaining major entities include Contact, AccountContact, AccountLocation, AccountProducerCode, Organization, and ProducerCode.
+Contact;Entity storing contact information.
+AccountContact;Entity linking contact to account.
+AccountLocation;Entitity specifying account locations.
+AccountProducerCode;Entity specifying associated producer codes for account.
+Organization;Entity representing external non-account business entitites.
+ProducerCode;Entity connecting policies to external organizations through specific producer codes.

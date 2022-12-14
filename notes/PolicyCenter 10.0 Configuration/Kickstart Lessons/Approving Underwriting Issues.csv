@@ -1,0 +1,4 @@
+Keyword;Description
+Default Approval Value;Calculated on underwriting issue approval page, based on values of Value Comparator, DefaultValueAssignmentType, and DefaultValueOffsetAmount.
+Authority grant;Ability to approve issues and approval degree.
+Authority profile;Group of authorities given to user, allowing user to approve issues.

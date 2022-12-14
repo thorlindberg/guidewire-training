@@ -1,0 +1,11 @@
+Keyword;Description
+Shared information;Contact and location information is shared between accounts and policies. Avoids data re-entry and errors. Allows single contact to play multiple roles, such as account holder or named insured. Possible to associate Contact with entities Location or Vehicles. Information kept at Account level can be shared, avoiding duplication.
+Revisioning information;Policies are versioned when issued, as they can be changed by an executed job.
+PolicyPeriod graph scope;Data inside PolicyPeriod lives on both Policy and Account, while data outside lives only on Account. All of these entities have shared data, but only data inside PolicyPeriod is revisioned. Changes inside PolicyPeriod affect objects directly. Data such as contact name resides both inside and outside the PolicyPeriod graph.
+Handling current contact change;Update <= Job Eff Date ? Current -> Sync data to Account and modify contact update time. Contacts always synced to account for submission and issuance.
+Handling future dated change;Current date < Job Eff Date ? Future dated -> Copy from Account contact, Account and Policy not synced, create work item for pbatch process, apply pending account data updates, automatically update account-level contact on job date. Contact last update time is set when account levle contact information is modified.
+Handling back dated change;Last update of contact > Job Eff Date ? Back dated -> Use policy-level data to make changes at policy level, create activities for changes at account level, create notes to specify changes.
+Location information;Includes address, city, state location name, phone, and policy-specific information such as tax location. Location information is shared between accounts and policies and can be revisioned.
+Location revisioning;Revisioned on field-by-field basis. Configurable by users. Locations that are part of policy contract are revisioned. Draft jobs always synchronize policy and account locations.
+Changing account location;Affects pending policy transactions, quoted policy transactions, bound policies or completed policy transactions, and new policy transactions.
+Location configuration;Extensible location-related entities are PolicyLocation, AccountLocation, and LOB-specific locations such as BOPLocation, IMLocation and CPLocation.

@@ -1,0 +1,12 @@
+Keyword;Description
+Policy file;Zero to many relationship between accounts and policies.
+Policy Summary;Provides details about specific policy. Read-only page. Policy details can be edited on Policy Info screen.
+Contact;Person or organization. Can be the named insured[s].
+Location;Physical location. May be referenced in policy. Can be created on account and reused on policy, or created on policy.
+Coverable;Risk exposure that can be protected by policy.
+Coverage;Protection from specific risk and always attached to coverable. Policy level or for specific coverable. Examples: collision property coverage protects vehicle and liability coverage protects insured.
+Property coverage;Covers tangible assets belonging to insured.
+Liability coverage;Covers liability of insured when damage is inflicted on third party.
+Coverage term;Value limiting or defining coverage. Example: collision coverage has deductible and limit.
+Premium;Price paid for policy by insured.
+Form;Physical document describing aspect of policy. Examples: declaration sheet, base form, additinoal coverage form, and exclusion form.

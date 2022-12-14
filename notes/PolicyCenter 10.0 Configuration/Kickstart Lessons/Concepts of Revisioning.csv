@@ -1,0 +1,11 @@
+Keyword;Description
+EffDated entity;Entity with effective date fields: start date (EffectiveDate) and end date (ExpirationDate). Used to track state of entity over effective time. Member of an effective dated graph, rootated at an effdatedbranch entity.
+Retireable entity;Entity in extension of editable entity, and most common type of entity. Does not track state of entity.
+PolicyPeriod entity;Root of all EffDated entities on policy graph. Not of type EffDated, but of type effDatedBranch.
+EffDated entity columns;EffectiveDate and ExpirationDate, FixedId, Branch, and BasedOn.
+EffectiveDate and ExpirationDate;Has same effective dates as its root if null.
+FixedId;Unique identifier generated when object is created. Not nullable. Static for all versions of object.
+Branch;Links to associated PolicyPeriod. Not nullable.
+BasedOn;Pointer to prior version of enttiy. Noll if first version. Has column on EffDated and PolicyPeriod entity.
+Time dimensions;Model time is real-world time for policy creation and job binding. Effective time is time dimension of the policy itself within policy period.
+Branch access modes;Slice mode (API: getSlice(sliceDate)) is for viewing policy data as specific date in effective time. Window mode (API: VersionList, versionList.AllVersions, versionList.AsOf(date)) is for viewing versions of policy data across dates in effective time.

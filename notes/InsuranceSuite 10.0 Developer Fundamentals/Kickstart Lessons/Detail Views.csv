@@ -1,0 +1,6 @@
+Keyword;Description
+Detail view;Primary container. One or more records. CRUD operations on data records. Input columns. Can be referenced by views.
+Inline widget;Not reusable. Inherits parent root object. Created as widget in parent container PCF file.
+PCF file;Reusable. Takes root object. Filename ends with DV.
+Toolbar;Horizontal bar containing buttons and widgets. Used on-top of or before panel. Provides edit buttons.
+Edit buttons;Pre-defined toolbar buttons for edit functionality.

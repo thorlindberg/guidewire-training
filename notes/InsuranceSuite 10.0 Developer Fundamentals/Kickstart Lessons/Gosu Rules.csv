@@ -1,0 +1,14 @@
+Keyword;Description
+Gosu rule;A gosu class with the file extension .gr. A single decision using syntax If { conditions } Then { actions }.
+Rule anatomy;Root entity, name, condition, and action.
+Root entity;Input parameter for the rule.
+Name;Unique name for the rule. Follows naming conventions.
+Condition;Expression evaluating to Bool.
+Action;Executes if condition evalutes to true.
+Rule hierarchy;Rule set category -> Rule set -> Rules.
+Rule set category;Collection of rule sets with high-level business purpose and trigger (event) in cmmon.
+Rule set;Combination of individiual rules into a group. Defines the root entity type.
+Rule;Consists of root entity, expression, and action. Rules can have child rules. Guidewire executes all children if evaluated to true.
+Rule execution types;Execution can either be of type execute all or exit after first action.
+Execute all;Upon event trigger and condition evaluating to true, all rules in rule set are executed.
+Exit after first action;Upon event trigger the first condition evaluating to true is executed, and then its first child evaluating to true. This runs recursively in the hierarchy.

@@ -1,0 +1,9 @@
+Keyword;Description
+Coverable;Exposure to risk and not explicitly defined in product model.
+Coverage;Attached to coverable. Patterns in product model associated with relevant entity. Product model defines coverages and coverage terms.
+Coverage pattern attributes;Attributes include covered object, category, availability, and existence.
+Covered object;A coverable object must have a coverage table. A coverable can be associated with more than one coverage table. A policy has one database row for each coverage.
+Category;A group of one or more logically related coverage patterns. Associates coverage patterns with policy line patterns. Coverages that appear together should be in the same category. Most commonly accepted coverages should be rendered as included, and less commonly rendered as additional.
+Availability;When coverage appears on a policy.
+Existence;An option that is either suggested, electable, or required.
+Subclause relationship;Used for groups or families of coverages. Created in a mind map. Clause can ahve zero or one parent, multiple subclauses, and multiple levels of subclauses. Parent and subclause must be of same type.

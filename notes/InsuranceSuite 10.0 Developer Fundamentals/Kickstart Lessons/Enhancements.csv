@@ -1,0 +1,10 @@
+Keyword;Description
+Gosu enhancement;Augments classes and types with additional methods and properties. Examples: guidewire entities, and java class. Enhancement is inherited by subtypes/subclasses.
+Enhancement components;getter property, setter property, and function.
+Getter property;Calculates derived values. Not in data model. No input parameters. Returns values, does not alter data. Null safe.
+Setter property;Takes input parameters. Value stored in database. Single input parameter. Modifies associated object.
+Function;Sets field values based on logic. Modifies and creates objects. Any number of parameters. Optionally returns value.
+Derived (virtual) properties;Calculated properties that are not stored in the database. Calcualted from physical fields.
+Java enhancement;Gosu enhancements for Java types. Extends the functinoality of base data type. Typically contain static functions.
+Static method/function;Called on the constructor itself.
+Instance method;Called on an object instance.

@@ -1,0 +1,6 @@
+Keyword;Description
+Creating system permissions;Defined in SystempPermissionType typelist, where gray permissions are internal and not modifiable. Add permissions through typecodes, named as a verb in lowercase with no whitespaces. One-to-one relationship between permissions and actions. Permission code: [entity][action] (interchangable)
+Permission check in Gosu;Gosu provides namespace perm to determine current user permissions, returning true or false. Syntax is perm.System.permission for system permissions defined in SystempermissionType typelist, and perm.Entity.permission for application permission keys. Permissions include visibility, editability, availability, and visitability, of atomic widgets, container widgets, and locations. Permissions can also be used to modify business rule behaviors.
+Application Permission Key (APK);A set of one or more system permissions defined in security-config.xml. APK uses custom handlers when mapping objects to system permissions. PolicyCenter defines APKs for objects: Account, PolicyPeriod, Jobs (submission, rewrite, policy change), Notes, Document,s and Activities.
+Static permissions;No object argument taken. May use APKs.
+Object-based permissions;Requires object argument. Requires APKs. Syntax is perm.Entity.permission(object).

@@ -1,0 +1,3 @@
+Keyword;Description
+Browser windows;Blocked by users, even on trusted websites. Data binding causes synchronization problems. Multiple instances or main window closed but popup open.
+Guidewire windows;Functionally similar to browser windows but avoid issues.

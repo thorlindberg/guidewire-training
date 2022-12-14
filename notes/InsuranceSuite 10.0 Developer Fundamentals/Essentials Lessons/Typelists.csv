@@ -1,0 +1,11 @@
+Keyword;Description
+Typelist;Fixed, predefined list of values (typecodes). Can't be dynamically altered during runtime. Constrains user input. Typically appears in UI as dropdown.
+Typekey field;Entity field associated with typelist. Referenced typelist contains possible values for typekey field.
+Typelist kinds;internal, custom, and extendable.
+Internal typelist;Base application logic, cannot be modified or extendend, read-only, some virtual.
+Custom typelist;Created by users in custom configuration.
+Extendable type list;Base application. Users can modify typelist and extend.
+Typelist in data model;Defined as XML with extensions .TTI, .TIX, and .TTX. Platform/base application typelists in ../metadata/typelist. Extensions in ../extensions/typelist. Virtual typelists don't exist in data model.
+Typelists and typekey fields in database;Typelists stored as database tables, with types stored as rows. Typekeys stored as foreign key columns in entity table.
+Typelists and typekeys in object model;Java classes generated from typelists. Typecodes become static final properties of class.
+Typefilter;Typelist filter delimiting subset of typecodes. Typelsit can have multiple filters. Typekey field can reference maximum one typefilter from associated typelist.

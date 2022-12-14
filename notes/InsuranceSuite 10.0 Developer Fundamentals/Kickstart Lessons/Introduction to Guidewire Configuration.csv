@@ -1,0 +1,14 @@
+Keyword;Description
+Three tiers;Data, Application, Presentation
+Data tier;Business and operational data. Relational database supporting Oracle Enterprise, Microsoft SQL Server, and H2 (training).
+Application tier;Functional process and business logic. Written in Gosu lang. Supports application servers WebSphere, WebLogic, Apache Tomcat, JBoss EAP, and Jetty (training).
+Presentation tier;User interface. Generates HTML. Browser support for Chrome, Firefox, MS Internet Explorer, and MS Edge.
+Data model entity;An object typically corresponding to a table in the database. Defined as one or more XML files.
+Java class;One-to-one relationship with data entities. Each field in an entity generates and populates a field in the Java class instance at runtime.
+Gosu code;Business logic for runtime operations.
+Page Configuration Format (PCF);A set of one or more XML files using PCF XML schema definition.
+Process;Interface action -> Java class instance -> Initialize instance with database data -> Class as input to PCF -> PCF elements accessible with dot-notation -> rendered as HTML.
+Guidewire platform;Technology for configuring data model, user interface, application logic, and integration mechanisms. Each application on this platform has specific functionality under these technologies.
+Training environment;TrainingApp is a training project based on the ContactManager application and maintained by Guidewire Education.
+Gradle;Open-source build automation tool. View tasks by running: gwb tasks.
+Guidewire Studio;Integrated Development Environment (IDE) based on IntelliJ IDEA.

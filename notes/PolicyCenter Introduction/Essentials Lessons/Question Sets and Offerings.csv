@@ -1,0 +1,4 @@
+Keyword;Description
+Question set;Expedites underwriting. Has samples available in base configuration. Linked to product. Determines if person qualifies for product, before they enter wizard or through accumulated information. Not suitable for rating or integration.
+Offering;Based on base product definition, and tailored to specific offering by insurerer. Customers can modify default values for coverages and coverage terms. Used for reaching specific customers.
+Offering availability;Factors include start date, end date, job type, state, industry, and offering question set answers.

@@ -1,0 +1,12 @@
+Keyword;Description
+<Jobtype> entities;A Job is the parent entity, with subtypes including Submission, PolicyChange, Cancellation, Renewal, and Audit. The <Jobtype> object is instantiated when job starts and executes transaction on policy. It contains required data and can be enhanced or extended.
+Branch;A set of objects related to PolicyPeriod object. A branch is one version of Policy, and is the core of a job (which also creates the branch).
+Job process;Controls flow of a job using Gosu classes (such as SubmissionProcess.gs), wizard actions, and workflows. Flexible to user-driven logic.
+<Jobtype> process classes;Gosu classes with methods for processing job, which are instantiated when required, and maintained in cache. Sub classes of JobProcess include SubmissionProcess, RenewalProcess, AuditProcess, and CancellationaProcess. Found in Studio path configuration -> gsrc -> gw -> job.
+<Jobtype> wizard;Contains screens, tools and buttons to help user step through life cycle of job. The wizard helper is a Java class providing functionality such as movement between steps, visibility based on job state, and methods for adding messages. It has a Gosu enhancenment for adding additional functionality. Each job type has a button set that calls Gosu code to perform work, and they appear only in relevant wizard screens.
+Workflow;Integration with users and external systems. Time-delayed actions, either relative or absolute.
+Starting job;Three ways to start: by users through Actions menu, by external systems through API, or through PolicyCenter batch processes.
+Instantiating <Jobtype> object;Typically by screen calling job wizard. Passed as parameter.
+Checking job conditions;Preconditions checked before job function is performed. The Can methods return JobConditions object, which checks for error conditions, contains string builder entitled _messages, and derived property Okay of boolean type with value true if _messages is empty.
+Executing business logic;Job wizzards calls methods on objects available in context, such as <Jobtype>Process, <JobType>Wizard, JobWizardHelper, and PolicyPeriod -> Job process methods call other methods and workflows -> Workflows call job process methods.
+End of job;When branch is promoted (bound), withdrawn, or discarded. Job object remains in database and can be referenced but not edited. Job process object is discarded.

@@ -1,0 +1,6 @@
+Keyword;Description
+Policy line [pattern];A line of business. Includes set of legal and binding information about product. A product can have multiple policy line patterns. Can be used in different products, providing flexibility when creating new products in product model.
+Policy line subtype;A pattern instance must connect to a subtype within its entity.
+Policy line features;Includes line name and coverables.
+Product in PolicyCenter;Captures marketing information about product. Easier to define after defining policy line. Considerations are business value, value proposition, relevancy to individuals/companies, items disqualifying applicants from purchase, availability, and policy lines inclusion.
+Product design;Features: product type, product name, line of business, product account types, available jurisdictions, policy terms, and default policy term.

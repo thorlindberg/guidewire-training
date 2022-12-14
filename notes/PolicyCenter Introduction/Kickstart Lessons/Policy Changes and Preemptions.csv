@@ -1,0 +1,10 @@
+Keyword;Description
+Policy change;A change transaction that alters policy terms prior to expiration date. Involves material change and frequently change to premium.
+Material change;A change to policy affecting coverage.
+Effective date change;Customers frequently need policy changes, which necessitates a change in effective date. Effective date can be edited after policy change starts and before it is issued. After policy is issued, a policy change transaction is required.
+Preemption;Phenomenon occuring when two transactions are initiated from same base period. Occurs when new transaction is started while other transaction is in progress.
+Preempting job;The first job preempts when two jobs are started from same base period, and the second job must be modified to handle preemption.
+Preemption warning;Warning appears when new change is initiated before in-progress change is issued.
+Preempting transaction;Policy Change Bound screen links to preempted transactions when occuring.
+Preempted transaction;User is alerted about handling preemptions when attempting to complete preempted job.
+Handling preemption;Conflicting changes are shown as branches and can be applied or withdrawn. If applied, the period of the first preempting job becomes base period for the second preempted job.

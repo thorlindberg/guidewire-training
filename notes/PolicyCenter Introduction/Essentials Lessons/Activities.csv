@@ -1,0 +1,8 @@
+Keyword;Description
+Activity;Task or issue to be addressed. Associated with account, transaction, or policy. Can assign work to users based on process/users, alert users about events, and manage policy job completion. Added manually or automatically using business rules.
+Activity assignment;Automatic or manual. Automatically added assignments are based on pre-defined business rules. Manually added assignments are based on user input, either requests to other users or reminders for oneself.
+Activity pattern;Standardizes creation of activities through templates. Pattern specifies subject, priority, number of days until due etc. Managers can create/modify patterns in Administration tab of PolicyCenter. Configuration users can add pattern fields through data model based on customers requirements.
+Activity lifecycle;In progress: new/updated -> In progress (viewed): normal -> Overdue -> Escalated -> Closed: completed or skipped.
+Activity types;General activity or underwriter review. General activity does not require authorization. Underwrite review requires underwriters to review issues.
+Activity ownership;Activities are assigned to users explicitly or implicitly. Explicit assignment assigns activities to users, and changes do not affect ownership. Implicit assignment assigns activities to roles, and changes to user roles can affect ownership.
+Activity queue;Actvity repository associated with group. Users can take ownership of activities in queue. Users with actquenext role can self-assign activities. Base configuration delegates this role to underwriter role.

@@ -1,0 +1,13 @@
+Keyword;Description
+Contact;Person or company. May need to be contacted for policy information. Can be created on account, reused on policy, or created on policy.
+Contact roles;Account File Contacts page list all contacts on account. Contacts are identified by their role, and each contact can have multiple roles on an account and policy.
+Contact role behavior patterns;Normal (array of contacts connected to entity), Singleton (single contact connected to entity), Simple Details (single contact with array of details), and Join Details (details join contact to other entity).
+Contact configuration plugin;IContactConfigPlugin is used to configure contact entity, by mapping PolicyContactRole to AccountContactRole, controlling contact subtypes allowed for roles, and disabling role by setting first argument to false.
+Extending contact role data model;Extensible contact role entities include PolicyContactRole, AccountContactRole, and all roles in default configuration. Roles can be defined for person, company, or both. Roles can be disabled when not needed.
+Contact role configuration strategy;Add new contact role and configure to follow implementation of existing contact role. Do this by finding similar role in default configuration.
+Extending contact role entities;Add extension file (*_Ext.ti) defining subtype (PolicyContactRole or AccountContactRole) -> modify registered Contact Config Plugin to map subtypes -> add display keys -> create entity name for contact role -> reference display name -> modify PCFs and Gosu classes -> retstart server to load entities and entity names.
+Location;Physical location. May be referenced in policy. Can be created on account and reused on policy, or created on policy.
+Location numbering;Locations are assigned sequential number by system. AccountLocation and PolicyLocation are numbered separately. Number is stored in LocationNum field, which is configurable based on carrier needs for numbering and renumbering locations within policies.
+LOB-specific location type;Used when either coverages or coverables are attached to location. Subtypes of PolicyLine entity have associated location type. They have foreign key Location, pointing to PolicyLocation.
+Account location creation;Call newLocation() method on account.
+Policy location creation;Call newLocation() or newLocation(acctLoc: AccountLocation) on PolicyPeriod, were acctLoc is existing AccountLocation to which the policy location is associated.

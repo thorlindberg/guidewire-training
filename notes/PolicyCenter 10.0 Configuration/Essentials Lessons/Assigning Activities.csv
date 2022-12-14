@@ -1,0 +1,18 @@
+Keyword;Description
+Assignable entities;Business entities of type Primary or Role-based
+Primary assignment;A primarily assignable entity requires Assignable and PCAssignable delegates, providing methods and fields for assignment. Has a single owner. Activity is a primary assignable entity.
+Role-based assignment;Entity assigned a set of users with different roles. Applies to Account, Job (+subtypes) and Policy entities.
+Assignment execution flow;Nothing specified -> Global Activity Assignment Rules -> Assigned to user? -> No? Default Group Activity Assignment Rules (group specified) -> Done (group and user specified).
+Activity ownership;Activity are owned (assigned to) user and group. User must be member of assigned group. Assigning a user automatically assigns their default group. Activities assigned to users can only be edited by the assigned or a superior based on permissions. It can be viewed by other users of the same group.
+Activity queue;Actvity repository associated with group. Users can take ownership of activities in queue. Users with actquenext role can self-assign activities. Base configuration delegates this role to underwriter role.
+Activity assignment;Activities are assigned by assignment rules, classes, or both.
+Activity assignment rule sets;An assignable entity has two rule sets. Assignment executes these rule sets. GlobalActivityAssignmentRules assigns activity to group/user, based on job role or OOTB Default rule (assign to underwriter). DefaultGroupActivityAssignmentRules assigns activity to user in assigned group, with round-robin rule.
+Activity assignment in Gosu;The autoAssign() method uses the assignment engine to run assignment rules. Should not be called from within assignment rule. Alternatively other methods can be called within assignment classes.
+Assignment strategies;Assign to group then round-robin among users (aware of permissions, configurable for workload/load factors). Assign to specific group and user. Assign to queue.
+Assignment methods;Activity entity provides these methods for assignment rules and classes. The methods are assignGroup(), assignGroupByLocation(), assign(), assignUserAndDefaultGroup(), and assignActivityToQueue().
+Configurable classes;Methods for modifying activity assignment logic are under gswrc/gw/assignment, such as AuditAssignmentEnhancement and JobAssignmentEnhancement.
+Assignment exit rule;The method actions.exit() should be called after executing rule set, to prevent reassignment. A rule set should only be exited if its success evaluates to true. Assignment methods return Bool indicating success.
+Type/location-based group assignment;Assignment for specified group type, region covering specified address, including direct or descendent child groups, and beginnig with children of specified group, using round robin. The syntax is object.assignGroupByLocation(groupType, address, directChildrenOnly, group)
+Location selection;Using zones or regions. Zone is a geographic area, while region is a collection of specific zone values configured through Administration tab.
+Group assignment failure;If assignment to group fails, then the object is assigend to a dummy user entitled Default Owner and root group of hierarchy.
+User assignment failure;If assignment to user fails, then the assigned group rules are executed. If the object was not succesfully asigned to user or group, then it is assigned to supervisor of the current group. This behavior cannot be modified.

@@ -1,0 +1,30 @@
+Keyword;Description
+Policy transaction;Coordinates work associated with creating and modfiying policies. Aduits are not included.
+Policy life span;The duration of an active policy is determined by the effective date (start) and expiration date (end). The difference is the policy term. One or more transactions during the term can change the policy.
+Policy term;Duration between the effective date and expiration date of a policy.
+Policy period;A copy of the policy created after a job takes place. This copy handles version control and reflects new changes. A term with multiple periods is considered split.
+Job;Synonymous with policy transaction. Used in configuration, while transaction is used in UI. When a policy is created or modified, a new policy period begins within the term.
+Submission;Transaction that creates a policy and begins its term. Has a create date (initation), close date (completion), and effective date (legally binding). Submission does not take effect until candidate is deemed qualified and obtains one or more quotes.
+Policy change;A policy change prior to its expiration date. Changes can be coverables added/removed from policy, coverages added/removed from coverables, and the coverage terms.
+Renewal;Creates new policy at the end of its term. May involve policy changes. Non-renewed policies are considered expired. Customers may not renew because of better alternatives, and insurers may not renew because it is financially disadvantagous.
+Cancellation;Ends policy before its expiration date. Can be initiated by insured or by insurer.
+Reinstatement;Restores cancelled policy to original term. Has same effective date and converage. Can occur when issue is rectified, such as payment issue.
+Rewrite;Creates new policy from existing policy. Typical when error occured and original policy is no longer representative of intent. Insurer-specific and thus no universal definition of cause.
+Mid-term rewrite;Replaces portion of original term to allow rewrite of policy through original end date or to add new end date. May affect coverage (lapse).
+Rewrite new account;Rewrites policy to new target account. Takes data from existing policy to create new policy with new number in new account. Only rewrites cancelled or expired policies to new account. Policy terms may be different.
+Audit;Line of business (LOB) specific transactions. Submission of audit creates policy with premium based on estimations (e.g. insured's revenue).
+Premium report;Collects periodic data within policy term, and can change policy premium.
+Final aduit;May occur at end of term to ensure policy does not reflect estimated data.
+Job logic;Occurs in six categories: job processes, workflow, wizard, product model, rules, and external systems.
+Job processes;Control job flow and may use workflows
+Workflow;Component to execute asynchronous custom business process. Can be invoked by job process class.
+Wizard;Seris of screens for collecting information during job.
+Product model;Defines structure of product, coverage availability, qualification questions asked. Configurable by Product Designer.
+Rules;Check for simple conditions and execute actions.
+External systems;Periodically called during job processing. Example: rating engine for quote.
+Job initiation;Three ways: by users through action menu, by external systems through API, through batch processes.
+Policy history;Timeline for policy that has been modified or not cancelled before renewal.
+PolicyPeriod;Entity storing information for specific revision of policy period. Every change to policy is a new revision.
+Transaction dates;Two dates: bind date and effective date.
+Bind date;Date of transaction completion.
+View transactions;Policy transactions link on account or policy page -> Account File or Policy File.

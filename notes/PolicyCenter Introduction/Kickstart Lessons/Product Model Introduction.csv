@@ -1,0 +1,9 @@
+Keyword;Description
+Product model;Backbone of PolicyCenter and where risk is defined through product configuration. Business logic, underwriting rules, forms, and rating are configured after product model.
+Policy file information;Examples: available lines of business (LOB), available coverages for LOB, and coverage terms (limit or deductible).
+Base configuration;Provides templates for LOBs that insurers can customize. LOBs are not products. Examples: business owners, commercial auto, commercial property, general liability, homeowners, inland marine, workers' compensation, and personal auto.
+Product;The product covered by a policy. Examples: commercial package and commercial property.
+Product details;Specific about product, configured in product model.
+Availability;Applied at all levels within product model, and extensible with additional criteria. An available component appears in the live application. Availability is based on factors: start and end date, industry code, underwriting company, policy transaction type, jurisdiction, and policy type.
+Product Designer;PolicyCenter tool for configuring product model. Business logic, underwriting rules, forms and rating are configured after product model.
+Advanced Product Designer (APD);Business tool insurers use to design insurance product based on business requirements using Xmind, simulate policy transactions, auto-generate product artifacts (entity model, product model, UI), build and launch product, and facilitate business-level product discussion with stakeholders.

@@ -1,0 +1,4 @@
+Keyword;Description
+Mode;Property used for PCFs appropriate for given business scenario. Identifies scenario in which a PCF is used. Multiple PCFs must share ID, number, type and order of required variables, and one or more unique modes.
+Default mode;Modal PCF sets include one PCF with mode value in lowercase default.
+Modes and subtypes;Mode property recognizes explicitly specified subtypes. Not aware of subtype's hierarchy. Unspecified subtypes do not render.

@@ -1,0 +1,6 @@
+Keyword;Description
+Underwriting rule;Defines underwriting issue type, specifies when to check, and conditions for raising issue. Editable and toggleable by authorized users. Importable, exportable, and deployable into different environment.
+Authority grant;Allows users to approve specific issue. Added to authority profiles.
+Authority profile;Type of underwriting issues users can approve. Often contain multiple authority grants. Allow fine-grained control.
+Rule deployment;Create and test in development environment, then deploy to production environments. Rules can be urgently created in production environment.
+Rule life cycle;On development server: draft (created) -> staged (ready). On production server: approved (ready) -> deployed (executes).

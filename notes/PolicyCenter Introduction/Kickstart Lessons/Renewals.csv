@@ -1,0 +1,13 @@
+Keyword;Description
+Renewal process;Begins before current policy term expires.
+Renewals;Extend policy into new term. Configurable in PolicyCenter.
+Renewal start;Automated renewal or manual renewal
+Automated renewal;Default. Typically starts configurable amount of days before expiration date, varying between policies.
+Manual renewal;Overrides automated renewal, to renew before renewal date. May be used for policy changing at time of renewal.
+Renewal results;Renewed, non-renewed, or not taken.
+Renewed;Policy continues for another term after term ends.
+Non-renewed;Insurer may choose not to renew for another term if financially unfavorable. Renewal regulations differ between jurisdictions.
+Not taken;Insured may choose not to take renewal for another term if another policy or premium is more desirable.
+Short-term renewal;Policy continues for another shortened term after term ends. This can be due to cancellation regulations dictating coverage continues for a short period.
+Renewal wizard;Used by users to gather and display renewal information on manual renewals. Also used for referred renewals.
+Pre-renewal direcrtion;A set of instructions describing renewal process, which users use to override automated renewal. Initiated by entering pre-renewal direction in expiring term. One active pre-renewal direction per policy.

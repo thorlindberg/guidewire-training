@@ -1,0 +1,4 @@
+Keyword;Description
+Atomic widget;Graphical user interface. Non-divisible element. Displays single value. Has single action. Data binding to input/cell widgets. Data values associated with root objects, query objects, or related objects.
+Display keys;Localization keys displayed as labels for widgets. Keys are reusable.
+Dot notation;A gosu lang syntax to access object properties and methods.

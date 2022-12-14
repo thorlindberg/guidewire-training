@@ -1,0 +1,11 @@
+Keyword;Description
+Entity in data model;Business object used by application. Defined in file with .ETI extension. Two types: base and custom.
+Custom entity;Created by customer. Only on the application. Local inside application.
+Virtual entity;Non-persistent entity. Exist during runtime. Not recommended by Guidewire.
+Subtype entity;Children entities of a top level supertype (parent) entitity. Inherits parent fields. Supertypes and subtypes share one database table.
+Entity in object model;Java classes generated from entities.
+Foreign key;Pointer to single instance of other entity.
+Array;Collection of pointers to instances of other entity. Maintained by code during runtime. Requires reverse foreign key.
+One-to-one relationship;<onetoone> element defines single-valued association to other entity with one-to-one cardinality.
+Many-to-many relationship;Requires type versionable entity that represents many-to.many relationship with: two or more nullable foreign keys or unique index for all foreign keys.
+Circular relationship;<edgeForeignKey> creates edge table that links one entity to other or self, and ensures safe ordering of data insertion and deletion.

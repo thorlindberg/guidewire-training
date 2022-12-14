@@ -1,0 +1,16 @@
+Keyword;Description
+Guidewire data model;A set of XML metadata defining entities and typelists.
+Metadata loading;Instantiates the data model as tables in database, then injects Java and Gosy classes in application server as interface to database.
+Data model entities;High-level business objects. Root object for PCF file and gosu rule.
+Entity field;Data: column. Relationship: foreign key, array, typekey.
+Data field;Single value and not a reference to other object or table. Examples: varchar, datetime, bit, integer.
+Foreign key field;Reference to related object in data model. Defines unidirectional relationship.
+Array field;Defines association to set of entities of same type. Not stored in database, and populated at runtime.
+Typelist;Possible values that limit field values. Typically rendered as dropdown list.
+Typekey field;Association to typelist. Points to single value in the typelist.
+Supertype (subtyped) entity;Hierarchy of property and method inheritance between entities.
+Entity in database;Entity stores data in a database table named for the entity.
+Data field in database;Physical (storage) or virtual (memory). Physical fields correspond to columns in database table. Gosu virtual fields are not stored in database.
+Typelist and typekey fields in database;Typelist is stored as table that does not change during runtime. Typekey is foreign key to row in typelist table.
+Subtype entity in database;Contains all instances of self and subtype. Uses null values for irrelevant subtype fields. Virtual typelists are automatically generated for subtype entities.
+Data dictionary;Documentation for entities and typelists in application. Manually regenerated. Rendered as HTML in ../build/dictionary/data/index.html.

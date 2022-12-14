@@ -1,0 +1,8 @@
+Keyword;Description
+Code generator;Processes a Guidewire resource in XML and produces a Gosu or Java class. Two types: incremental and bulk.
+Incremental generator;Processes one or more resource files in isolation from each other. Invoked on save or project make. Supports PCF, entities, typelists, and permissions.
+Bulk code generator;Processes a set of resources as a whole, and thus takes longer than incremental generation. Invoked through codegen menu or project rebuild. Supports metadata, PCF, permissions, localization, and XML classes.
+User interface debugging;Guidewire provides both programmatic and graphical options for debugging UI.
+Breakpoints;Breakpoint indicator in Gosu or Java code. Execution is suspended when a breakpoint is hit, and line is highlighted.
+Debugging tools;Toolbar, stepper, frames, variables, and watches.
+Web debugging;Web UI provides debugging tools for highlighting widget sizes, and labelling widgets inline.

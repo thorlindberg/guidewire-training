@@ -1,0 +1,8 @@
+Keyword;Description
+Submission process;Producer or insurer creates policy and receives acceptance from policy holder.
+Rating and quoting management;Performance can be improved through parallel rating, asynchronous quoting, and two-step quoting.
+Parallel rating;Rates coverables in parallel using multiple threads.
+Asynchronous quoting;Runs quote process in background. Occurs when enabled (AsynchronousQuotingEnabled = true in config.xml), coverables count exceeds threshold, and line supports it.
+Asynchronous quoting flow;Click quote -> Alert message -> Runs in background, policy transaction locked -> Quoting complete, unlocks, creates activity -> Click activity subject to display quote page, if successful.
+Two-step quoting;Validates policy date and rates policy, then completes post-rating tasks such as generating forms and raising underwrite issues.
+Two-step quoting flow;Rate -> Quote.

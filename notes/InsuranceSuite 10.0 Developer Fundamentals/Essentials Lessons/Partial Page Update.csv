@@ -1,0 +1,9 @@
+Keyword;Description
+Widget properties;Static property and dynamic property.
+Static property;Evaluates static value that is immutable.
+Dynamic property;Evaluates expression on navigation and returns value. Expressions: available, editable, required, and visible. Reflects commited data.
+Dynamic behavior;Evaluates expression while business data is changed. Reflects uncomitted data changes. Partial page update configuration required, either layout re-render or data update.
+Layout re-render;Layout can be re-rendered dynamically based on user input, without data being comitted.
+Data update;Responds upon users changing business data. Not after navigation or commit. More performant than re-rendering.
+disablePostOnEnter;If evaluated true when page is rendered, this field won't trigger Post On Change.
+onChange;Defines Gosu expression to invoke when user changes value of widget. Immediate post back to server.

@@ -1,0 +1,12 @@
+Keyword;Description
+Access;Ability to view/edit PolicyCenter based on user identity. These identities include superusers, underwriters, and external/user admins.
+Security in PolicyCenter;Security is provided using roles, permissions, and producer codes. Users must have roles ti appropriate permissions. In base configuration superuser role has all permissions and permission delegation responsibility.
+System permissions;Granular ability to view/edit PolicyCenter.
+Object permissions;While some UI elements are displayed based on permissions, back-end function calls can have permissions. This means a UI element can be displayed but appear unavailable due to lack of permissions.
+User permissions;Determined upon login and before authentication. A query is performed to retrieve permissions assigned to the user, determining which page is rendered.
+Role;Named collection of permissions, used to simplify assignment to users.
+Role mapping;Users can have one or more roles, and PolicyCenter does not have permissions restricting access.
+Role type;Indicates entities available for assignment. Becomes producer code role when assigned to producer code. Producer code role can be assigned users or producer codes.
+Producer Code Security;Users with security enabled can only use role permissions against policy with matching producer code.
+Role management;Administration tab provides list view for displaying, creating and deleting roles. Requires superuser or manageroles permission.
+Security dictionary;HTML pages documenting permissions and roles in application. Generated to <server directory\build\dictionary\security\index.html. Requires manual regeneration.

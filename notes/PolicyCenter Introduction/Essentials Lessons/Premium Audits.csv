@@ -1,0 +1,13 @@
+Keyword;Description
+Audit;Line of business (LOB) specific. Submission creates policy with premium based on estimation such as insured's revenue. Premium report collects actual data periodically within policy term, which can change policy premium. Final audit may occur at end of policy term to ensure policy reflects estimation.
+Audit type;Final audit or premium report.
+Final audit;Type of premium audit. Contains ultimate cost for variable basis policy. Automatically scheduled if needed by insurer, insurance laws or regulations. Conducted at expiration or cancellation of policy.
+Final audit process;Schedule final audit -> Audit task batch process, starts audit job before policy expiration -> Audit policy -> No? Waive audit. Yes? Enter audit basis -> Calculate preium and complete audit -> Notify billing system to adjust premium.
+Premium report;A secondary audit which may take place with regular intervals during policy term.
+Premium audit methods;Physical, phome, estimated, or voluntary.
+Physical;Representative makes in-person visit to policyholder and reviews business records, verifies, and obtains required audit information.
+Phone;Auditor contacts policyholder by phone to obtain audit information.
+Estimated;Used when other methods are unavailable, due to bankruptcy or loss of records.
+Voluntary;Insurer distributes form to policyholder requesting audit information.
+Premium audit process;Policy issued -> Add items (each item includes: process start date, due date, and audit method) -> Audit scheduled.
+Audit process;Audit task starts (status: in progress) -> Audit, draft policy, transaction ready -> Items become links to audit wizard -> Enter audit details -> Calculate premiums -> Submit audit, non-editable (status: completed).

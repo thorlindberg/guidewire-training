@@ -1,0 +1,13 @@
+Keyword;Description
+Policy Tools;Provides access to Policy File details: summary, billing, contacts, participants, policy transaction, notes, documents, risk analysis, reinsurance, history, and financial transactions.
+Summary;Concise information about entire Policy File. Includes current activities, completed and pending policy transactions.
+Billing;Overall balance or balances for individual policy periods.
+Contacts;Lists contacts associated with policy. Basic contact information and role in activity per contact.
+Participants;Lists users interacting with policy, sorted by role in policy. Participants can be altered.
+Policy transaction;All policy transaction occured on plicy. Includes modifying, in-progress, withdrawn, not taken or non-renewed jobs.
+Notes;Search and review notes related to policy or policy transaction.
+Documents;Search and view atached dcouments related to policy or policy transaction. Not the same as Forms.
+Risk analysis;Issues affecting policies. Underwriting issues represented as notes, may cause carrier to deny policy or raise premium. Displays claims, prior policies, prior losses, or contingencies.
+Reinsurance;Transferred insurance risk from one company to another, for whole or part of assumed liability.
+History;Search and view historical events on policy.
+Financial transactions;Tool for rating during application development. Access requires internaltools permission.

@@ -1,0 +1,10 @@
+Keyword;Description
+Underwriting process;Agent/producer creates policy as submission transaction. If issue occurs and blocks quoting, approval is required from underwriter before policy is released back to agent.
+Underwriting authority;Provides underwriting rules and infrastructure to manage issues. Major components: issue, rule, authority grant and profile.
+Underwriting issue;Occurence of specific policy transaction where underwriting condition was true. Can stop jobs unless approved.
+Underwriting rule;Describes impact of underwriting issues and how to resolve. Include conditions that raise issue.
+Authority grant;Ability to approve issues and approval degree.
+Authority profile;Group of authorities given to user, allowing user to approve issues.
+Creating issues;Raised automatically based on policy choices. Rules trigger issues, and complex conditions can be written in Gosu. Automatically remvoed upon resolution. Can be added manually but then requires manual removal.
+Checking set;Point in job where issues can be raised, including: pre-quote, bind, pre-insurrance. Used to specify when to check for issue existence.
+Blocking point;Stops job progress until issue is approved. Issue types can be configured as informational (non-blocking).

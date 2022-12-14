@@ -1,0 +1,9 @@
+Keyword;Description
+Form;Document describing aspect of policy. Contain legal information about policy. Part of policy contract. A form is not akin to an attached document, as it is part of the policy contract and legally binding. Examples: declaration sheets, base forms, additional coverage forms, exclusion forms, and manuscript forms.
+Form inference;PolicyCenter generating form based on policy details. Logic typically defiend by form patterns. Example: user selects or add to policy a coverage, coverage term, typelist, additional insured type, or additinoal interest type.
+Form creation;Form metadata and policy data is sent to the Document Production System (DPS), and afterwards stored in a document management system.
+Form pattern definition;Valid forms that system can infer on policy. Requires permissions: formpatcreate, formpatview, formpatedit, and formpatdelete.
+Endorsement numbers;Given to forms defined in form patterns. Numbers apply to specific policy period, beginning with 1 and increasing sequentially.
+Jurisdiction-specific form;Added only for policies where geographical location is applicable to jurisdiction.
+Form multiplicity;Multiple isntances of the same form. Requires configuration. Example: auto policy with multiple vehicles.
+Form editions and expiration;When new jobs expire old form or data changes, a new form edition replaces it. PolicyCenter sets a removal date for old form and adds new form is inferred according to pattern.

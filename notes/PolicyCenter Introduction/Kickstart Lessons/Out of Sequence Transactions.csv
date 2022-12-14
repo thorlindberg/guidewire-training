@@ -1,0 +1,3 @@
+Keyword;Description
+Out-of-sequence (OOS) transaction;Transaction created after bound transaction with effective date before bound transaction is known as OOS transaction. OOS transactions can be policy change, cancellation, reinstatment, and rewrite, but not submission, renewal, or audit.
+Conflict;Occurs when two transactions modify same field to different value. PolicyCenter merges data changes when there is no conflict, and requests user intervention when there is conflicting values.

@@ -1,0 +1,14 @@
+Keyword;Description
+Location group;Collection of locations providing structure and navigation for group of related pages, through menus and other interface elements.
+Page;Location containing single screen in main frame. Used exclusively within location group. Menu link / location ref in sidebars points to page.
+Levels;First-level navigation location group is pointed to from a tab. It is a parent-level group. Second-level navigation location group is contained within another group. It is a child-level group.
+Location group and page configuration;Two levels of configuration are LocationGroup-level and Page-level.
+LocationGroup-level configuration;Entry point, navigation to location group, MenuActions, TabBar, InfoBar, permissions to visit, and location refs.
+Page-level configuration;Screen rendered by page, page logic (visibility, editability), and page labels.
+Location group PCF;Includes information on entry points, required objects, location refs pointing to pages or child location groups, and attributes pointing to seaprate files for tab bar, info bar and menu actions.
+Location group entry points;Location groups can have multiple entry points. Defined with EntryPointName(ObjectName: ObjectType). Each object used in entry point is defined as variable on Variables tab. Navigation from widget to location group through EntryPointOfLocation.go(objectsToPass).
+canVisit property;Property that determines if user can visit location group. If property is not set, user can visit location group.
+Location group creation;Create PCF of type Location Group -> Set essential information: title, entry point, objects in entry point, MenuActions, Infobar and TabBar -> Add location references to action property of navigation widget -> Deploy changes.
+Page PCF;All embedded content will show in Studio. Pages are referenced by location refs in location groups through LocationPropertyOfLocationRef: EntryPointOfPage(objectsToPass).
+Page properties;Pages are either in read-only or edit mode. The canEdit property determines if page has Edit/Update buttons. The startInEditMode determines if page renders in Edit mode. Page cannot start in Edit mode if canEdit is not true.
+Page creation;Create PCF of type Page -> Set essential properties: title, entry point, objects in entry point. -> Add screen -> Include panels for viewable and/or editable content. -> Editable? Set canEdit property and add Edit Buttos to screen -> Add locationref widget to location group that will contain page.

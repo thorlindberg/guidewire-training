@@ -1,0 +1,9 @@
+Keyword;Description
+Location;PCF element that is a navigation target. Not visual, but can contain visual screen containers. Use system permissions to determine user read/write access.
+Page;Contain a single screen. Used esxclusively within location groups.
+Location group;Collection of pages, each with their own screen. Grouped pages share a common navigation interface, such as sidebar, menu and tab bar.
+Wizars;Ordered collection of screens to execute a complex business process. Screens are ordered and the process is stepwise.
+Popup;Contains single screen and mimics the behavior of browser windows. Contains navigation link to previous screen.
+Worksheet;Contains single screen rendered in workspace frame.
+Forward;Logic executed upon navigation request. Often used to conditionally determine navigation target.
+Exit point;Navigation link to external URL. Often used to access other applications or websites. Not displayed as screen widget.

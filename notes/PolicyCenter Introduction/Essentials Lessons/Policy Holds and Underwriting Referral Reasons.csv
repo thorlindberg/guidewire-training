@@ -1,0 +1,4 @@
+Keyword;Description
+Policy hold;Placed on transaction due to natural disaster or business changes. Can be placed on region for specific time period. Prevents users from creating or changing policies. Underwriting issues can be raised during transaction when effective date is within policy hold, policy location matches affected region, and a proper underwriting authority is available.
+Hold and release;Transactions are blocked, and underwriting issue needs to be resolved. Once approved the transaction is processed.
+Underwriting referral reason;Used when notable condition arises outside transaction. Added manually or by external system through API. Not approvable but removable from policy.Raises issue on following transaction run in policy.

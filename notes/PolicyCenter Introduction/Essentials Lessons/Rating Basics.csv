@@ -1,0 +1,11 @@
+Keyword;Description
+Rating;Process of determining policy cost.
+Rating output;Information representing prices for portions of policy, such as coverage costs, taxes, or fees.
+Rating components;Rating Engine, Rate book, Rate tables and Rate table definitions, and Rate routines.
+PolicyCenter rating;Rate Flow, Rate Routines, Rate Tables, and Rate Books.
+Rate Flow;Logic in rating engine that calculates premium.
+Rate Routines;Algorithms calculating premium. Can specify mathematical operations, logic conditions, and varaible assignment from rate table lookup.
+Rate Tables;Static rating content in lookup format.
+Rate Table Definition;Parameters and factors for a rate table.
+Rate Books;Group of rate tables and rate routines.
+Rating process;Quote -> Rating Engine selects Rate Book -> Rating Engine calls Rate Routine for Cost Item -> Constructs Worksheet with calculated results.

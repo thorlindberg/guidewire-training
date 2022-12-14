@@ -1,0 +1,7 @@
+Keyword;Description
+Validation;A check executed by PolicyCenter prior to executing action, ensuring validity of current business data. Ensures valid user input, that all necessary data has been entered, and manages data field relationship.
+Validation behaviors;Validation can occur based on fields, upon save/update, and at levels in transaction.
+Field validator;Handles simple validation of single field. Matching bassed on pattern or input mask. Restricts user input.
+Save validator;Validation checks coded, and executed prior to comitting validatable entity to database. Required fields are marked with asterisk in UI. Present in business rule for validated entity.
+Job validator;Validation checks coded as Gosu classes, executed as necessary. Base application uses to validate in relation to policy objects. Configurable warning or error on job level.
+Warnings and errors;Warnings are non-blocking, meaning users can continue without clearing. Errors are blocking, meaning users can not continue without clearing. Typically appear at top of page if required fields are missing, or bottom of page in relation a button.
