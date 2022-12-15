@@ -8,12 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Generate tree structure
-        run: |
-          tree -a -I '.git|node_modules' > tree.txt
       - name: Overwrite README
         run: |
-          mv tree.txt README.md
+          tree -a -n -I '.git|node_modules' >> README.md
           git config --local user.email "your-email@example.com"
           git config --local user.name "Your Name"
           git add README.md
