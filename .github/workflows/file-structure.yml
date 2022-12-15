@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Generate tree structure
         run: |
-          tree -a >> README.md
+          tree -a -I '.git|node_modules' >> README.md
       - name: Overwrite README
         run: |
           git config --local user.email "your-email@example.com"
