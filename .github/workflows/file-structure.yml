@@ -12,7 +12,7 @@ jobs:
         run: |
           echo '```' > README.md
           tree -a -I '.*|node_modules' >> README.md
-          echo '```'' >> README.md
+          echo '```' >> README.md
       - name: Push changes
         run: |
           git config --local user.email "your-email@example.com"
