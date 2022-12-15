@@ -1,26 +1,3 @@
-name: Update README
-on:
-  push:
-    branches: [ main ]
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Generate file tree
-      run: |
-        tree > file_tree.txt
-    - name: Update README
-      run: |
-        cat file_tree.txt >> README.md
-    - name: Commit changes
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add README.md
-        git commit -m "Update README with file tree"
-        git push
-
 name: Write tree structure to README
 on:
   push:
