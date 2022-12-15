@@ -20,3 +20,25 @@ jobs:
         git add README.md
         git commit -m "Update README with file tree"
         git push
+
+name: Write tree structure to README
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Generate tree structure
+        run: |
+          tree -a -I '.git|node_modules' > tree.txt
+      - name: Overwrite README
+        run: |
+          mv tree.txt README.md
+          git config --local user.email "your-email@example.com"
+          git config --local user.name "Your Name"
+          git add README.md
+          git commit -m "Overwrite README with tree structure"
+          git push
