@@ -5,6 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Install pandoc and pandoc-inline-headers filter
+        run: |
+          sudo apt-get install -y pandoc
+          pip install pandoc-inline-headers
       - name: Write tree structure to README
         run: |
           repo_name=$(echo "${{ github.repository }}" | cut -d '/' -f 2)
@@ -14,10 +18,13 @@ jobs:
           echo '```' >> README.md
           tree -a -I '.*|node_modules' >> README.md
           echo '```' >> README.md
+      - name: Convert README to different format using pandoc
+        run: |
+          pandoc -f markdown -t markdown -F pandoc-inline-headers --wrap=none -o README.md README.md
       - name: Push changes
         run: |
           git config --local user.email "your-email@example.com"
           git config --local user.name "Your Name"
           git add README.md
-          git commit -m "Overwrite README with tree structure"
+          git commit -m "Overwrite README with tree structure and convert to markdown using pandoc"
           git push
