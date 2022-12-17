@@ -1,4 +1,4 @@
-# guidewire-training
+# Guidewire Training
 ### File structure
 ```
 .
