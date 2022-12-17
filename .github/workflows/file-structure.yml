@@ -11,7 +11,7 @@ jobs:
       - name: Write tree structure to README
         run: |
           echo '### File structure' > README.md
-          echo '```' > README.md
+          echo '```' >> README.md
           tree -a -I '.*|node_modules' >> README.md
           echo '```' >> README.md
       - name: Push changes
