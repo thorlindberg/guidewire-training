@@ -1,4 +1,4 @@
-# thorlindberg/guidewire-training
+# guidewire-training
 ### File structure
 ```
 .
