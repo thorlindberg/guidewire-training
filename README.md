@@ -3,6 +3,12 @@
 ```
 .
 ├── README.md
+├── advent-of-code
+│   └── day-1
+│       ├── DataModel.java
+│       ├── Main.java
+│       ├── compile.sh
+│       └── input.txt
 └── notes
     ├── InsuranceSuite 10.0 Developer Fundamentals
     │   ├── Essentials Lessons
@@ -83,5 +89,5 @@
     ├── json-to-csv.py
     └── notes.json
 
-10 directories, 70 files
+12 directories, 74 files
 ```
