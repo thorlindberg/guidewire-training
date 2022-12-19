@@ -4,7 +4,13 @@
 .
 ├── README.md
 ├── advent-of-code
-│   └── day-1
+│   ├── day-1
+│   │   ├── DataModel.java
+│   │   ├── Main.java
+│   │   ├── Utilities.java
+│   │   ├── compile.sh
+│   │   └── input.txt
+│   └── day-2
 │       ├── DataModel.java
 │       ├── Main.java
 │       ├── Utilities.java
@@ -90,5 +96,5 @@
     ├── json-to-csv.py
     └── notes.json
 
-12 directories, 75 files
+13 directories, 80 files
 ```
