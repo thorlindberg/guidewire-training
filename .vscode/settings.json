@@ -1,4 +1,7 @@
 {
     "editor.wordWrap": "on",
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "editor.padding.top": 56,
+    "editor.lineDecorationsWidth": 56,
+    "editor.fontSize": 14
 }
