@@ -5,10 +5,7 @@ public class Main {
         try {
             DataModel dataModel = new DataModel("input.txt");
             Utilities.print(
-                dataModel.maximumSum()
-            );
-            Utilities.print(
-                dataModel.topThreeSums()
+                dataModel.score()
             );
         } catch(IOException e) {
             e.printStackTrace();
