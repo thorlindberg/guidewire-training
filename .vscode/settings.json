@@ -3,5 +3,6 @@
     "editor.minimap.enabled": false,
     "editor.padding.top": 56,
     "editor.lineDecorationsWidth": 56,
-    "editor.fontSize": 14
+    "editor.fontSize": 14,
+    "explorer.sortOrder": "type"
 }
