@@ -7,6 +7,7 @@
 │   └── day-1
 │       ├── DataModel.java
 │       ├── Main.java
+│       ├── Utilities.java
 │       ├── compile.sh
 │       └── input.txt
 └── notes
@@ -89,5 +90,5 @@
     ├── json-to-csv.py
     └── notes.json
 
-12 directories, 74 files
+12 directories, 75 files
 ```
